@@ -70,6 +70,7 @@ def main():
             continue
 
         try:
+            prompt.invoke(issue)
             result = analyze_issue(issue)
             print("\n=== 分析结果 ===")
             print(result)
